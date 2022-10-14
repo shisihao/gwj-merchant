@@ -198,7 +198,7 @@ export default {
     },
     onHandleDownload() {
       this.downloadLoading = true
-      exportExcel()
+      exportExcel(this.search)
         .then(response => {
           location.href = '/' + response.data.filename
         })
