@@ -199,8 +199,8 @@ export default {
     onHandleDownload() {
       this.downloadLoading = true
       exportExcel(this.search)
-        .then(response => {
-          location.href = '/' + response.data.filename
+        .then(({ msg }) => {
+          this.$message.success(msg)
         })
         .catch(_ => {})
         .finally(() => {

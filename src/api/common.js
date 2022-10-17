@@ -121,3 +121,10 @@ export function goodsCategoryList(params) {
     params
   })
 }
+
+// 服务商
+export function filterPartner(params) {
+  return request.get('public/filter/partner', {
+    params
+  })
+}

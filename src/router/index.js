@@ -127,6 +127,17 @@ export const constantRoutes = [
         meta: { title: '提现申请', icon: 'cny' }
       }
     ]
+  }, {
+    path: '/export',
+    component: Layout,
+    children: [
+      {
+        path: 'exportCenter',
+        name: 'exportCenter',
+        component: localMap.exportCenter,
+        meta: { title: '导出中心', icon: 'excel' }
+      }
+    ]
   }
 ]
 
